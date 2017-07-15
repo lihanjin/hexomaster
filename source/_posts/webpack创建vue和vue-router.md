@@ -1,6 +1,6 @@
 ---
 title: webpack创建vue和vue-router
-date: 2017-05-13 22:24:08
+date: 2017-01-13 22:24:08
 tags: Vue
 categories: Vue
 ---
@@ -211,13 +211,248 @@ module.exports = {
 	
 	babel编译规则需要.babelrc文件配置
 	
-	
+## 四、VueX
+1.state为状态的参数。
+
+2.getters为获取器，用于过滤的方法获取参数。
+
+3.mutations是改变状态参数的函数，但是不能直接被调用，需要对应的store.commit（可以额外传参数）。
+
+4.actions不是直接修改状态，而是基于mutations，可以执行异步处理
+
+5.store更像一个容器，装着以上的所有函数和参数，最后需要注入到Vue的实例当中。
+
+- 1.安装`vuex  cnpm install vuex --save`
 
 
+- 2.新建文件夹 在这个文件夹里面新建一个`store.js`
 
 
+- 3.在这个js里面引入`vue` 和`vuex`  注意`use`	
+- 4.定义state
 
 
+```
+var state={
+
+    list:[],   /*放增加的数据*/
+
+    count:0
+}
+```
+- 5.mutations  定义方法
+
+```
+	var mutations={
+
+    addData(state,listdata){  //listdata表示穿过来的数据
+
+        state.list.push(listdata);
+
+
+    },
+    removeData(state,key){   //key删除数据的索引值    
+
+            state.list.splice(key,1);
+
+    },
+    incCount(state){
+        state.count++
+        
+    }
+
+}
+```
+
+- 6.类似于计算属性 
+
+```
+var getters={
+
+    countState:function(state){
+
+        return state.count+100;
+    }
+}
+```
+- 7.操作  改变mutations           context  this  store
+
+```
+var  actions = {   /*方法*/
+    doIncCount:function(context) {
+      context.commit('incCount')
+    }
+}
+```
+- 8.VueX使用
+	- 要用外面定义好的store
+
+    - 1.引入import store from '../vuex/store.js';
+
+    - 2.注册这个store
+  
+
+```
+    import store from '../vuex/store.js';//引入
+
+    import Footer from './Footer.vue';
+
+    export default{
+        store,//注册
+        data(){
+
+            return {
+
+                msg:'home',
+                username:''
+            }
+        },        
+        methods:{
+
+            addData(){
+                    store.commit('addData',this.username);
+                    //使用strre.commit('mutations里面的方法'，传入的参数)            },
+            removeData(){
+
+                    // store.commit('dec');
+            },
+
+            incCount(){
+
+              store.commit('incCount');  
+            }
+        },components:{
+
+            'v-footer':Footer
+        }
+
+
+        
+    }
+```
+
+```
+  {{$store.state.count}} -------{{$store.getters.countState}
+  state里面的属性          -------  通过getters计算的属性
+```
+
+## 五、代码块
+<br/>
+- 1.`page.json`
+
+```
+	{
+  "name": "elm",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "css-loader": "^0.25.0",
+    "element-ui": "^1.3.7",
+    "file-loader": "^0.9.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "vue": "^2.3.3",
+    "vue-resource": "^1.3.4",
+    "vue-router": "^2.7.0",
+    "vuex": "^2.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.5.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.5.0",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^5.0.1",
+    "vue-loader": "^12.1.0",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
+```
+<br/>
+- 2.`entry`文件`main.js`
+				
+
+```
+import Vue from 'vue';
+import App from './App.vue';
+import ElementUI from 'element-ui';//引入element-ui
+import 'element-ui/lib/theme-default/index.css';//引入element.css样式
+import Vuex from 'vuex';//引入vuex
+import VueResource from 'vue-resource';//引入vueResource
+import VueRouter from 'vue-router';//引入vuerouter
+
+Vue.use(VueRouter)//使用vuerouter
+Vue.use(Vuex)//使用vux
+Vue.use(ElementUI)//使用elementUi
+Vue.use(VueResource)//使用vueresonrce
+
+//创建组件引入组件
+import Home from './conponents/home.vue';
+
+  
+  
+//配置路由
+const routes=[
+  {path:"/home",component: Home},
+  {path:"/*",redirect: Home}//重定向
+]
+
+//实例化vueRouter
+const router= new VueRouter({
+    routes//（缩写）相当于 routes: routes
+})
+
+//挂载到vue的实例上
+new Vue({
+  router, 
+  el: '#app',
+  render: h => h(App)
+})
+```
+<br/>
+- 3.`Store`文件配置
+
+```
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+// 引入vue和vuex
+
+//定义state状态
+var state={
+    storeList:[],
+    msg:"111"
+}
+
+
+//定义mutations方法
+var mutations={
+   addData(state,data){
+       console.log(data)
+       state.storeList=data
+   }
+}
+
+
+//暴露
+export default new Vuex.Store({
+    state,
+    mutations
+})
+```
 
 
 

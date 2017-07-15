@@ -6,8 +6,7 @@ categories: Vue
 ---
 ## Vue基础整理
 
->链接：http://www.jianshu.com/p/aca10ab4be41
->來源：简书
+
 
 ***
 ### 1、先看一个经典的例子
@@ -165,8 +164,113 @@ methods:{
 ```
 
 ### 1-6、vue中的表达式
+
 ```
   {{number*20}} 
   {{ok?'111':'222'}}
   {{message.split('').reverse().join('')}}
-  ```
+```
+
+
+### 1-7、vue中的计算属性
+
+```
+computed:{
+	a:function(){
+	retrurn this.msg+"这是计算后的属性"
+	}
+}//写在methods的同级
+```
+`{{a}}`使用计算属性和使用data绑定的值一样，用到的data里面绑定的值变化，他就会变化
+
+
+### 1-8、vue中的$watch（watch） 监听数据变化
+- 1.第一种写法
+
+```
+ vm.$watch('name',function(newValue,oldValue){
+			//name是state里面的数据
+			//newValue是state变化后的新值
+			//oldValue是state变化之前的值
+})
+```
+- 2.第二种写法
+
+```
+ watch:{
+        msg:function(newVal,oldVal){
+            console.log(newVal+'--'+oldVal);
+        }
+    }
+```
+### 1-9、vue中的v-bind:class
+- 可以通过布尔值来控制class
+```
+<div class="static" v-bind:class="{ 'class-a': isA, 'class-b': isB }">
+```
+
+
+- 第一个元素加red的class
+
+```
+list:['1','2','3']
+
+<li v-for="(item,key) in list" :class={"red":key==0}>{{item}</li>
+```
+- 可以把一个数组传给v-bind:class，以应用一个class列表
+
+```
+<div id="app">
+    <label v-bind:class="[activeClass, errorClass]">测试</label>
+</div>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            activeClass:'active',
+            errorClass:'text-danger'
+        }
+    })
+```
+- 也可以使用三元表达式
+
+```
+ <label v-bind:class="[isActive ? activeClass : '', errorClass]">测试</label>
+```
+- 始终添加一个和判断添加一个
+
+```
+<label v-bind:class="[{active:isActive}, errorClass]">测试</label>
+```
+- 可以绑定v-style
+
+```
+	<div id="app">
+    <label v-bind:style="classObj">测试</label>
+</div>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            classObj: {
+                color: 'red',
+                fontSize: '30px'
+            }
+        }
+    })
+```
+
+### 1-10、vue中的数据请求插件
+vue-resource        axios
+
+### 1-11、vue中的双向绑定数据
+
+```
+input  type="text"    v-model
+
+	checkbox
+		
+	radio       v-model
+
+
+select   值
+```
+

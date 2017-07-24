@@ -1,6 +1,6 @@
 ---
 title: JavaScript中property和attribute的区别 
-date: 2016-07-27 13:50:20
+date: 2015-07-27 13:50:20
 tags: 
     - JavaScript
 categories: JavaScript

@@ -1,6 +1,6 @@
 ---
 title: 基于gulp的工作流配置
-date: 2017-01-21 17:40:43
+date: 2016-01-21 17:40:43
 tags:  gulp
 categories: Build
 ---

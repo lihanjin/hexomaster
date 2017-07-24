@@ -1,6 +1,6 @@
 ---
 title: ES6新特性
-date: 2017-02-04 18:20:43
+date: 2015-02-04 18:20:43
 tags: 
    - JavaScript
    - ES6

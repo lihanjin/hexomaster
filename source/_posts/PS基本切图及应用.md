@@ -1,6 +1,6 @@
 ---
 title: PS基本切图及应用
-date: 2016-08-08 15:30:43
+date: 2014-08-08 15:30:43
 tags: PS
 categories: Front-End
 ---

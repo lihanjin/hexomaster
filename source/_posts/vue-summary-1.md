@@ -1,6 +1,6 @@
 ---
 title: Vue学习总结(一)
-date: 2017-03-19 12:24:08
+date: 2016-07-19 12:24:08
 tags: Vue
 categories: Vue
 ---

@@ -1,6 +1,6 @@
 ---
 title: Vue基础总结
-date: 2017-05-11 22:24:08
+date: 2016-05-11 22:24:08
 tags: Vue
 categories: Vue
 ---

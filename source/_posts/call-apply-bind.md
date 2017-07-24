@@ -1,6 +1,6 @@
 ---
 title: JS 中的 call、apply、bind 方法
-date: 2016-12-13 14:55:24
+date: 2014-12-13 14:55:24
 tags: JavaScript
 categories: JavaScript
 ---

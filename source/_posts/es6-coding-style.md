@@ -1,6 +1,6 @@
 ---
 title: ES6编码风格
-date: 2017-04-14 14:24:08
+date: 2015-04-14 14:24:08
 tags: 
    - JavaScript
    - ES6

@@ -1,6 +1,6 @@
 ---
 title: JavaScript之定时器
-date: 2016-07-27 11:40:43
+date: 2015-07-27 11:40:43
 tags: JavaScript
 categories: JavaScript
 ---

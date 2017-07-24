@@ -1,6 +1,6 @@
 ---
 title: javascript笔记总结篇
-date: 2016-09-24 10:33:00
+date: 2014-09-24 10:33:00
 tags: JavaScript
 categories: JavaScript
 ---

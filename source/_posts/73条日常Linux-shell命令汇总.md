@@ -1,6 +1,6 @@
 ---
 title: 73条日常Linux shell命令汇总
-date: 2016-04-17 09:32:41
+date: 2015-04-17 09:32:41
 tags: Linux
 categories: Back-end
 toc: true

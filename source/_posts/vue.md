@@ -1,6 +1,6 @@
 ---
 title: Vue基础代码整理
-date: 2017-05-12 22:24:08
+date: 2016-05-12 22:24:08
 tags: Vue
 categories: Vue
 ---

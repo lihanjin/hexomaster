@@ -1,6 +1,6 @@
 ---
 title: JavaScript之捕捉模型与冒泡模型
-date: 2016-07-27 11:40:43
+date: 2016-01-27 11:40:43
 tags: JavaScript
 categories: JavaScript
 ---

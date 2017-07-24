@@ -1,6 +1,6 @@
 ---
 title: JavaScript词法分析和作用域闭包
-date: 2016-07-27 00:50:43
+date: 2015-07-27 00:50:43
 tags: JavaScript
 categories: JavaScript
 ---

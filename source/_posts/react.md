@@ -1,6 +1,6 @@
 ---
 title: React知识点小结
-date: 2017-04-23 22:24:08
+date: 2016-04-23 22:24:08
 tags: React
 categories: React
 ---

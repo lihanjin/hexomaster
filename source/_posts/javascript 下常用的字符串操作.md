@@ -1,7 +1,7 @@
 
 ---
 title: javascript 下常用的字符串操作
-date: 2016-08-02 17:35:08
+date: 2014-08-02 17:35:08
 tags: 
 	- JavaScript
 	- Snippet

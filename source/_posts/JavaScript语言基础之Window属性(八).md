@@ -1,6 +1,6 @@
 ---
 title: JavaScript语言基础之Window属性(八)
-date: 2016-07-27 00:05:43
+date: 2015-07-27 00:05:43
 tags: JavaScript
 categories: JavaScript
 ---

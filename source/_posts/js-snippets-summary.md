@@ -1,6 +1,6 @@
 ---
 title: javascript常用积累
-date: 2017-01-14 08:20:43
+date: 2016-01-14 08:20:43
 tags: 
    - JavaScript
    - Snippet

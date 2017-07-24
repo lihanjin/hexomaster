@@ -1,6 +1,6 @@
 ---
 title: DOM编程之API学习总结篇
-date: 2016-09-22 17:10:43
+date: 2014-09-22 17:10:43
 tags: 
   - JavaScript
   - DOM

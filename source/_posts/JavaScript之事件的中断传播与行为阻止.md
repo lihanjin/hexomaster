@@ -1,6 +1,6 @@
 ---
 title: JavaScript之事件的中断传播与行为阻止
-date: 2016-07-27 11:50:43
+date: 2015-07-27 11:50:43
 tags: JavaScript
 categories: JavaScript
 ---

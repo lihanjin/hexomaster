@@ -1,6 +1,6 @@
 ---
 title: JavaScript面向对象程序设计
-date: 2016-07-27 00:36:43
+date: 2015-07-27 00:36:43
 tags: JavaScript
 categories: JavaScript
 ---

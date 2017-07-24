@@ -1,6 +1,6 @@
 ---
 title: jQuery基础之Ajax（六）
-date: 2016-08-07 22:30:08
+date: 2016-01-07 22:30:08
 tags: jQuery
 categories: jQuery
 ---

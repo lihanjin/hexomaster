@@ -1,6 +1,6 @@
 ---
 title: Ajax总结篇
-date: 2016-11-26 14:35:24
+date: 2014-11-26 14:35:24
 tags: 
   - JavaScript
   - Ajax

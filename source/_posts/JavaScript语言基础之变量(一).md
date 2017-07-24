@@ -1,6 +1,6 @@
 ---
 title: JavaScript语言基础之变量(一)
-date: 2016-07-26 20:46:43
+date: 2015-07-26 20:46:43
 tags: JavaScript
 categories: JavaScript
 ---

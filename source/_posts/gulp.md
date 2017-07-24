@@ -1,6 +1,6 @@
 ---
 title: gulp学习总结篇
-date: 2017-01-13 18:20:43
+date: 2016-01-13 18:20:43
 tags: gulp
 categories: Build
 ---

@@ -1,6 +1,6 @@
 ---
 title: webpack创建vue和vue-router
-date: 2016-01-13 22:24:08
+date: 2017-01-13 22:24:08
 tags: Vue
 categories: Vue
 ---

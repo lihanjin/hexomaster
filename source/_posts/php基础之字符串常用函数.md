@@ -1,6 +1,6 @@
 ---
 title: php基础之字符串常用函数
-date: 2016-05-24 15:35:57
+date: 2017-05-24 15:35:57
 tags: PHP
 categories: Back-end
 ---

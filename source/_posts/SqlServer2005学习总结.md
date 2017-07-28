@@ -1,6 +1,6 @@
 ---
 title: SqlServer2005学习总结
-date: 2016-05-17 17:42:17
+date: 2017-05-17 17:42:17
 tags: sql
 categories: DataBase 
 ---

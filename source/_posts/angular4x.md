@@ -1,6 +1,6 @@
 ---
 title: Angular4基础总结
-date: 2015-12-13 14:55:24
+date: 2017-04-13 14:55:24
 tags: Angular
 categories: Angular4.x
 ---

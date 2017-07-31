@@ -1,6 +1,6 @@
 ---
-title: categories
-date: 2016-05-28 14:20:28
+layout: categories
+comments: false
 ---
 links:
 - name: 前端路径
@@ -22,9 +22,7 @@ links:
 - name: angular和ionic教程
   link: https://github.com/IonicChina/Mobile-front-end-tutorial
 
-
-  works:
-- works_name: jQuery
+  - works_name: jQuery
   works_url: http://i5ting.github.io/How-to-write-jQuery-plugin/build/jquery.plugin.html
 - works_name: AngularJS
   works_url: https://angular.cn/
@@ -37,4 +35,4 @@ links:
 - works_name: animate.css
   works_url: http://daneden.github.io/animate.css
 - works_name: semantic-ui
-  works_url: https://semantic-ui.com/collections/menu.html 
+  works_url: https://semantic-ui.com/collections/menu.html    
